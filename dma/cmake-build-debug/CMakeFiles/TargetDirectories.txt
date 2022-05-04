@@ -1,0 +1,3 @@
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/dma/cmake-build-debug/CMakeFiles/dma.elf.dir
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/dma/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/dma/cmake-build-debug/CMakeFiles/rebuild_cache.dir
