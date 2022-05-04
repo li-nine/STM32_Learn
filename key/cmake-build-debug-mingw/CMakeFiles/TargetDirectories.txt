@@ -1,0 +1,3 @@
+F:/Embedded Code/STM32/Key/cmake-build-debug-mingw/CMakeFiles/Key.elf.dir
+F:/Embedded Code/STM32/Key/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+F:/Embedded Code/STM32/Key/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+F:/Embedded Code/STM32/Xuexi/key_exit/cmake-build-debug/CMakeFiles/key_exit.elf.dir
+F:/Embedded Code/STM32/Xuexi/key_exit/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Embedded Code/STM32/Xuexi/key_exit/cmake-build-debug/CMakeFiles/rebuild_cache.dir

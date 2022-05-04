@@ -1,0 +1,3 @@
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/cmake-build-debug/CMakeFiles/usart_control.elf.dir
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/cmake-build-debug/CMakeFiles/rebuild_cache.dir
