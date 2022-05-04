@@ -88,6 +88,7 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_UART_Receive_IT(&huart1, &aRxBuffer, 1);
+  Menu_Display();
   /* USER CODE END 2 */
 
   /* Infinite loop */

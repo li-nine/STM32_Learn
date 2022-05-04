@@ -191,7 +191,8 @@ CMakeFiles/usart_control.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c \
   D:/Environment\ variable/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/stdio.h \
   ../Core/Inc/usart.h \
   ../Core/Inc/main.h \
-  ../Core/Inc/gpio.h
+  ../Core/Inc/gpio.h \
+  ../Bsp/USART_CONTROL/bsp_usart_control.h
 
 CMakeFiles/usart_control.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../Core/Src/stm32f4xx_hal_msp.c \
   ../Core/Inc/main.h \

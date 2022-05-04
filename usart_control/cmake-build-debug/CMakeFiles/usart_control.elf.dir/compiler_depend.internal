@@ -195,6 +195,7 @@ CMakeFiles/usart_control.elf.dir/Core/Src/main.c.obj
  F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/Core/Inc/usart.h
  F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/Core/Inc/main.h
  F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/Core/Inc/gpio.h
+ F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/Bsp/USART_CONTROL/bsp_usart_control.h
 
 CMakeFiles/usart_control.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  F:/ProgramData/EmbeddedProject/STM32/Xuexi/usart_control/Core/Src/stm32f4xx_hal_msp.c

@@ -13,5 +13,14 @@
 
 #include "main.h"
 
+#define LED0_ON_ORDER   "LED0 ON"
+#define LED0_OFF_ORDER  "LED0 OFF"
+#define LED1_ON_ORDER   "LED1 ON"
+#define LED1_OFF_ORDER  "LED1 OFF"
+#define BEEP_ON_ORDER   "BEEP ON"
+#define BEEP_OFF_ORDER  "BEEP OFF"
+#define MAXRXBUFFERSIZE 256U          //接收最大字节数
+
+void Menu_Display(void);
 
 #endif //__BSP_USART_CONTROL_H__

@@ -11,13 +11,7 @@
 #include "bsp_usart_control.h"
 #include <string.h>
 
-#define LED0_ON_ORDER   "LED0 ON"
-#define LED0_OFF_ORDER  "LED0 OFF"
-#define LED1_ON_ORDER   "LED1 ON"
-#define LED1_OFF_ORDER  "LED1 OFF"
-#define BEEP_ON_ORDER   "BEEP ON"
-#define BEEP_OFF_ORDER  "BEEP OFF"
-#define MAXRXBUFFERSIZE 256U          //接收最大字节数
+
 
 extern UART_HandleTypeDef huart1;
 uint8_t aRxBuffer;                  //接收缓存
@@ -63,48 +57,69 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         if(aRxBuffer_cnt > MAXRXBUFFERSIZE - 1)
         {
             aRxBuffer_cnt = 0;
-            printf("数据溢出");
-            memset(RxBuffer, 0x00, sizeof(RxBuffer));
+            printf("Data is too long\r\n");
+            memset(RxBuffer, 0x00, sizeof(RxBuffer));//清除缓存数据
         }
         else
         {
-            if(RxBuffer[aRxBuffer_cnt - 1] == 0x0A && RxBuffer[aRxBuffer_cnt - 2] == 0x0D)
+            if(RxBuffer[aRxBuffer_cnt - 1] == '\r' && RxBuffer[aRxBuffer_cnt - 2] == '\n')
             {
                 if(strstr((const char *)RxBuffer, LED0_ON_ORDER) != NULL)
                 {
                     HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
-                    printf("LED0灯 亮\r\n");
+                    printf("LED0 ON\r\n");
                 }
                 else if(strstr((const char *)RxBuffer, LED0_OFF_ORDER) != NULL)
                 {
                     HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
-                    printf("LED0灯 灭\r\n");
+                    printf("LED0 OFF\r\n");
                 }
                 else if(strstr((const char *)RxBuffer, LED1_ON_ORDER) != NULL)
                 {
                     HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-                    printf("LED1灯 亮\r\n");
+                    printf("LED1 ON\r\n");
                 }
                 else if(strstr((const char *)RxBuffer, LED1_OFF_ORDER) != NULL)
                 {
                     HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-                    printf("LED1灯 灭\r\n");
+                    printf("LED1 OFF\r\n");
                 }
                 else if(strstr((const char *)RxBuffer, BEEP_ON_ORDER) != NULL)
                 {
                     HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, GPIO_PIN_SET);
-                    printf("蜂鸣器 开\r\n");
+                    printf("BEEP ON\r\n");
                 }
                 else if(strstr((const char *)RxBuffer, BEEP_OFF_ORDER) != NULL)
                 {
                     HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, GPIO_PIN_RESET);
-                    printf("蜂鸣器 关\r\n");
+                    printf("BEEP OFF\r\n");
                 }
                 else
                     printf("%s", RxBuffer);
-                memset(RxBuffer, 0x00, sizeof(RxBuffer));
+                aRxBuffer_cnt = 0;
+                memset(RxBuffer, 0x00, sizeof(RxBuffer));//清除缓存数据
             }
         }
         HAL_UART_Receive_IT(&huart1, &aRxBuffer, 1);
     }
+}
+
+/**
+  * @brief      显示一个菜单
+  * @param      无参数
+  * @retval     无返回值
+  */
+void Menu_Display(void)
+{
+    //显示菜单
+    printf("--------------------------------\r\n");
+    printf("---------------菜单--------------\r\n");
+    printf("-行为---------------命令----------\r\n");
+    printf("--------------------------------\r\n");
+    printf("LED0 亮          | %s\r\n", LED0_ON_ORDER);
+    printf("LED0 灭          | %s\r\n", LED0_OFF_ORDER);
+    printf("LED1 亮          | %s\r\n", LED1_ON_ORDER);
+    printf("LED1 灭          | %s\r\n", LED1_OFF_ORDER);
+    printf("BEEP 开          | %s\r\n", BEEP_ON_ORDER);
+    printf("BEEP 关          | %s\r\n", BEEP_OFF_ORDER);
 }
