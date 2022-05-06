@@ -1,0 +1,3 @@
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/cmake-build-debug/CMakeFiles/i2c_eeprom.elf.dir
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
