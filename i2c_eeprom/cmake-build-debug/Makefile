@@ -128,53 +128,53 @@ i2c_eeprom.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/build
 .PHONY : i2c_eeprom.elf/fast
 
-Bsp/AT24C02_I2C/bsp_at24c02_i2c.obj: Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj
-.PHONY : Bsp/AT24C02_I2C/bsp_at24c02_i2c.obj
+Bsp/EEPROM_I2C/bsp_eeprom_i2c.obj: Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj
+.PHONY : Bsp/EEPROM_I2C/bsp_eeprom_i2c.obj
 
 # target to build an object file
-Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj
-.PHONY : Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj
+Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj
+.PHONY : Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj
 
-Bsp/AT24C02_I2C/bsp_at24c02_i2c.i: Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.i
-.PHONY : Bsp/AT24C02_I2C/bsp_at24c02_i2c.i
+Bsp/EEPROM_I2C/bsp_eeprom_i2c.i: Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.i
+.PHONY : Bsp/EEPROM_I2C/bsp_eeprom_i2c.i
 
 # target to preprocess a source file
-Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.i
-.PHONY : Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.i
+Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.i
+.PHONY : Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.i
 
-Bsp/AT24C02_I2C/bsp_at24c02_i2c.s: Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.s
-.PHONY : Bsp/AT24C02_I2C/bsp_at24c02_i2c.s
+Bsp/EEPROM_I2C/bsp_eeprom_i2c.s: Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.s
+.PHONY : Bsp/EEPROM_I2C/bsp_eeprom_i2c.s
 
 # target to generate assembly for a file
-Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.s
-.PHONY : Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.s
+Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.s
+.PHONY : Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.s
 
-Bsp/USART_CONTROL/bsp_usart_control.obj: Bsp/USART_CONTROL/bsp_usart_control.c.obj
-.PHONY : Bsp/USART_CONTROL/bsp_usart_control.obj
+Bsp/USART/bsp_usart.obj: Bsp/USART/bsp_usart.c.obj
+.PHONY : Bsp/USART/bsp_usart.obj
 
 # target to build an object file
-Bsp/USART_CONTROL/bsp_usart_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj
-.PHONY : Bsp/USART_CONTROL/bsp_usart_control.c.obj
+Bsp/USART/bsp_usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj
+.PHONY : Bsp/USART/bsp_usart.c.obj
 
-Bsp/USART_CONTROL/bsp_usart_control.i: Bsp/USART_CONTROL/bsp_usart_control.c.i
-.PHONY : Bsp/USART_CONTROL/bsp_usart_control.i
+Bsp/USART/bsp_usart.i: Bsp/USART/bsp_usart.c.i
+.PHONY : Bsp/USART/bsp_usart.i
 
 # target to preprocess a source file
-Bsp/USART_CONTROL/bsp_usart_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.i
-.PHONY : Bsp/USART_CONTROL/bsp_usart_control.c.i
+Bsp/USART/bsp_usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.i
+.PHONY : Bsp/USART/bsp_usart.c.i
 
-Bsp/USART_CONTROL/bsp_usart_control.s: Bsp/USART_CONTROL/bsp_usart_control.c.s
-.PHONY : Bsp/USART_CONTROL/bsp_usart_control.s
+Bsp/USART/bsp_usart.s: Bsp/USART/bsp_usart.c.s
+.PHONY : Bsp/USART/bsp_usart.s
 
 # target to generate assembly for a file
-Bsp/USART_CONTROL/bsp_usart_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.s
-.PHONY : Bsp/USART_CONTROL/bsp_usart_control.c.s
+Bsp/USART/bsp_usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\i2c_eeprom.elf.dir\build.make CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.s
+.PHONY : Bsp/USART/bsp_usart.c.s
 
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
@@ -817,12 +817,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... i2c_eeprom.elf
-	@echo ... Bsp/AT24C02_I2C/bsp_at24c02_i2c.obj
-	@echo ... Bsp/AT24C02_I2C/bsp_at24c02_i2c.i
-	@echo ... Bsp/AT24C02_I2C/bsp_at24c02_i2c.s
-	@echo ... Bsp/USART_CONTROL/bsp_usart_control.obj
-	@echo ... Bsp/USART_CONTROL/bsp_usart_control.i
-	@echo ... Bsp/USART_CONTROL/bsp_usart_control.s
+	@echo ... Bsp/EEPROM_I2C/bsp_eeprom_i2c.obj
+	@echo ... Bsp/EEPROM_I2C/bsp_eeprom_i2c.i
+	@echo ... Bsp/EEPROM_I2C/bsp_eeprom_i2c.s
+	@echo ... Bsp/USART/bsp_usart.obj
+	@echo ... Bsp/USART/bsp_usart.i
+	@echo ... Bsp/USART/bsp_usart.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s

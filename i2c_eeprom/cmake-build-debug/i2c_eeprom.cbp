@@ -26,8 +26,8 @@
 				<Compiler>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F407xx"/>
-					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/AT24C02_I2C"/>
-					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART_CONTROL"/>
+					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/EEPROM_I2C"/>
+					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART"/>
 					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Core/Inc"/>
 					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Drivers/STM32F4xx_HAL_Driver/Inc"/>
 					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
@@ -56,8 +56,8 @@
 				<Compiler>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F407xx"/>
-					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/AT24C02_I2C"/>
-					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART_CONTROL"/>
+					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/EEPROM_I2C"/>
+					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART"/>
 					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Core/Inc"/>
 					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Drivers/STM32F4xx_HAL_Driver/Inc"/>
 					<Add directory="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
@@ -98,16 +98,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c">
+		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c">
 			<Option target="i2c_eeprom.elf"/>
 		</Unit>
-		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/AT24C02_I2C/bsp_at24c02_i2c.h">
+		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/EEPROM_I2C/bsp_eeprom_i2c.h">
 			<Option target="i2c_eeprom.elf"/>
 		</Unit>
-		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART_CONTROL/bsp_usart_control.c">
+		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART/bsp_usart.c">
 			<Option target="i2c_eeprom.elf"/>
 		</Unit>
-		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART_CONTROL/bsp_usart_control.h">
+		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART/bsp_usart.h">
 			<Option target="i2c_eeprom.elf"/>
 		</Unit>
 		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Core/Inc/gpio.h">

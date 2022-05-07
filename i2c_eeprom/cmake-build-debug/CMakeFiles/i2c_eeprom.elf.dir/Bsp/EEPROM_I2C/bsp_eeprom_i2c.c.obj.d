@@ -1,6 +1,6 @@
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj: \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL\bsp_usart_control.c \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL\bsp_usart_control.h \
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj: \
+ F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c \
+ F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C\bsp_eeprom_i2c.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/main.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/stm32f4xx_hal_conf.h \
@@ -65,6 +65,4 @@ CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj: \
  d:\environment\ variable\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\string.h \
  d:\environment\ variable\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\_locale.h \
  d:\environment\ variable\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\strings.h \
- d:\environment\ variable\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\string.h \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C/bsp_at24c02_i2c.h \
- d:\environment\ variable\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\math.h
+ d:\environment\ variable\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\string.h

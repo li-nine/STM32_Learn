@@ -69,5 +69,5 @@ CMakeFiles/i2c_eeprom.elf.dir/Core/Src/main.c.obj: \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/main.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/usart.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/gpio.h \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL/bsp_usart_control.h \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C/bsp_at24c02_i2c.h
+ F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART/bsp_usart.h \
+ F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C/bsp_eeprom_i2c.h

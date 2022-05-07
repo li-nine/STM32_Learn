@@ -5,13 +5,13 @@
 # compile C with D:/Environment variable/GNU Arm Embedded Toolchain/10 2021.10/bin/arm-none-eabi-gcc.exe
 ASM_DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Include
+ASM_INCLUDES = -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Include
 
 ASM_FLAGS = -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
 
 C_DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
 
-C_INCLUDES = -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Include
+C_INCLUDES = -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IF:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\CMSIS\Include
 
 C_FLAGS = -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
 

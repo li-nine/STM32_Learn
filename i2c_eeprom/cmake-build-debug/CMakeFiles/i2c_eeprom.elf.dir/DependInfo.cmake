@@ -20,8 +20,8 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "../Bsp/AT24C02_I2C"
-  "../Bsp/USART_CONTROL"
+  "../Bsp/EEPROM_I2C"
+  "../Bsp/USART"
   "../Core/Inc"
   "../Drivers/STM32F4xx_HAL_Driver/Inc"
   "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
@@ -31,8 +31,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj.d"
-  "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART_CONTROL/bsp_usart_control.c" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj.d"
+  "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj.d"
+  "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Bsp/USART/bsp_usart.c" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj.d"
   "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Core/Src/gpio.c" "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj.d"
   "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Core/Src/i2c.c" "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/i2c.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/i2c.c.obj.d"
   "F:/ProgramData/EmbeddedProject/STM32/Xuexi/i2c_eeprom/Core/Src/main.c" "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/main.c.obj.d"

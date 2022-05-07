@@ -68,33 +68,33 @@ include CMakeFiles/i2c_eeprom.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/i2c_eeprom.elf.dir/flags.make
 
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj: CMakeFiles/i2c_eeprom.elf.dir/flags.make
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj: ../Bsp/AT24C02_I2C/bsp_at24c02_i2c.c
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj: CMakeFiles/i2c_eeprom.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj"
-	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj -MF CMakeFiles\i2c_eeprom.elf.dir\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c.obj.d -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c.obj -c F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj: CMakeFiles/i2c_eeprom.elf.dir/flags.make
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj: ../Bsp/EEPROM_I2C/bsp_eeprom_i2c.c
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj: CMakeFiles/i2c_eeprom.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj"
+	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj -MF CMakeFiles\i2c_eeprom.elf.dir\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c.obj.d -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c.obj -c F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c
 
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.i"
-	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c > CMakeFiles\i2c_eeprom.elf.dir\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c.i
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.i"
+	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c > CMakeFiles\i2c_eeprom.elf.dir\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c.i
 
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.s"
-	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c.s
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.s"
+	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\EEPROM_I2C\bsp_eeprom_i2c.c.s
 
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj: CMakeFiles/i2c_eeprom.elf.dir/flags.make
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj: ../Bsp/USART_CONTROL/bsp_usart_control.c
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj: CMakeFiles/i2c_eeprom.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj"
-	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj -MF CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART_CONTROL\bsp_usart_control.c.obj.d -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART_CONTROL\bsp_usart_control.c.obj -c F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL\bsp_usart_control.c
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj: CMakeFiles/i2c_eeprom.elf.dir/flags.make
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj: ../Bsp/USART/bsp_usart.c
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj: CMakeFiles/i2c_eeprom.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj"
+	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj -MF CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART\bsp_usart.c.obj.d -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART\bsp_usart.c.obj -c F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART\bsp_usart.c
 
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.i"
-	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL\bsp_usart_control.c > CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART_CONTROL\bsp_usart_control.c.i
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.i"
+	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART\bsp_usart.c > CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART\bsp_usart.c.i
 
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.s"
-	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART_CONTROL\bsp_usart_control.c -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART_CONTROL\bsp_usart_control.c.s
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.s"
+	"D:\Environment variable\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART\bsp_usart.c -o CMakeFiles\i2c_eeprom.elf.dir\Bsp\USART\bsp_usart.c.s
 
 CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/i2c_eeprom.elf.dir/flags.make
 CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj: ../Core/Src/gpio.c
@@ -475,8 +475,8 @@ CMakeFiles/i2c_eeprom.elf.dir/startup/startup_stm32f407xx.s.s: cmake_force
 
 # Object files for target i2c_eeprom.elf
 i2c_eeprom_elf_OBJECTS = \
-"CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj" \
-"CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj" \
+"CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj" \
+"CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj" \
 "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/i2c.c.obj" \
 "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/main.c.obj" \
@@ -508,8 +508,8 @@ i2c_eeprom_elf_OBJECTS = \
 # External object files for target i2c_eeprom.elf
 i2c_eeprom_elf_EXTERNAL_OBJECTS =
 
-i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj
-i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj
+i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj
+i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj
 i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj
 i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Core/Src/i2c.c.obj
 i2c_eeprom.elf: CMakeFiles/i2c_eeprom.elf.dir/Core/Src/main.c.obj

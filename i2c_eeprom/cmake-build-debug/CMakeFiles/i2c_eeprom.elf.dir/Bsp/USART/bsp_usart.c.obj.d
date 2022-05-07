@@ -1,6 +1,6 @@
-CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj: \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C\bsp_at24c02_i2c.c \
- F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\AT24C02_I2C\bsp_at24c02_i2c.h \
+CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj: \
+ F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART\bsp_usart.c \
+ F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Bsp\USART\bsp_usart.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/main.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  F:\ProgramData\EmbeddedProject\STM32\Xuexi\i2c_eeprom\Core\Inc/stm32f4xx_hal_conf.h \

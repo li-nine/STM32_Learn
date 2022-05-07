@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj"
-  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/AT24C02_I2C/bsp_at24c02_i2c.c.obj.d"
-  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj"
-  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART_CONTROL/bsp_usart_control.c.obj.d"
+  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj"
+  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/EEPROM_I2C/bsp_eeprom_i2c.c.obj.d"
+  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj"
+  "CMakeFiles/i2c_eeprom.elf.dir/Bsp/USART/bsp_usart.c.obj.d"
   "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj"
   "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/gpio.c.obj.d"
   "CMakeFiles/i2c_eeprom.elf.dir/Core/Src/i2c.c.obj"

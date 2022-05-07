@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "bsp_usart_control.h"
+#include "bsp_usart.h"
+#include "bsp_eeprom_i2c.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,6 +46,8 @@
 
 /* USER CODE BEGIN PV */
 extern uint8_t aRxBuffer;
+uint8_t AT24C02_WriteBuffer[BUFFER_SIZE]= {"-----This is AT24C02 test!!!!------\r\n-------hello world!----------"};
+uint8_t AT24C02_ReadBuffer[BUFFER_SIZE];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -65,7 +68,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    uint8_t i;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -90,7 +93,8 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_UART_Receive_IT(&huart1, &aRxBuffer, 1);
-  Menu_Display();
+    AT24C02_Write(0, AT24C02_WriteBuffer);
+    AT24C02_Read(0, AT24C02_ReadBuffer, strlen((const char *)AT24C02_WriteBuffer));
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,6 +104,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+      HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
