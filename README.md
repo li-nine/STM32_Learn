@@ -18,4 +18,6 @@
 
 - [I2C读写EEPROM](https://github.com/li-nine/STM32_Learn/tree/main/i2c_eeprom)
 
+- [SPI读写Flash](https://github.com/li-nine/STM32_Learn/tree/main/flash_spi)
+
 	
