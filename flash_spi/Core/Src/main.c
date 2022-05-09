@@ -46,8 +46,8 @@
 
 /* USER CODE BEGIN PV */
 extern uint8_t aRxBuffer;
-uint8_t WriteBuffer[256] = {"-------------This is Flash test-----------\r\n------------Hello World!!!------------"};
-uint8_t ReadBuffer[256];
+uint8_t WriteBuffer[W25X_WritePageSize] = {"-------------This is Flash test-----------\r\n------------Hello World!!!-----------"};
+uint8_t ReadBuffer[W25X_WritePageSize];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -68,7 +68,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    uint32_t id;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -93,21 +93,23 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
     HAL_UART_Receive_IT(&huart1, &aRxBuffer, 1);
-    if(W25xx_GetID() == HAL_OK)
-        printf("Flash test success!\r\n");
+    id = W25xx_GetID();
+    if(id >> 24 == 0)
+        printf("0x%2X %2X%2X\r\n",(uint8_t)((id & 0xFF0000U) >> 16),
+               (uint8_t)((id & 0xFF00U) >> 8),
+               (uint8_t)(id & 0xFF));
     else
         printf("Flash test false!\r\n");
-
-    if(W25xx_SectorErase(0x000000U) == HAL_OK)
+    if(W25xx_SectorErase(4096 * 8) == W25X_OK)
         printf("Flash erase success!\r\n");
     else
         printf("Flash erase false!\r\n");
-    if(W25xx_WritePage(0x000000U, WriteBuffer, 10) == HAL_OK)
+    if(W25xx_Write(4096 * 8 + 250, WriteBuffer) == W25X_OK)
         printf("Flash write success!\r\n");
     else
         printf("Flash write false!\r\n");
-    if(W25xx_Read(0x000000U, ReadBuffer, 10) == HAL_OK)
-        printf("%s", ReadBuffer);
+    if(W25xx_Read(4096 * 8 + 250, ReadBuffer, strlen((const char *)WriteBuffer)) == W25X_OK)
+        printf("%s\r\n", ReadBuffer);
     else
         printf("Flash read false!\r\n");
   /* USER CODE END 2 */

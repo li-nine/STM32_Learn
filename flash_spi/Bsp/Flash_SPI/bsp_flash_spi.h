@@ -16,9 +16,9 @@
 #include "spi.h"
 
 typedef enum{
-    W25Qxx_OK       = 0x00U,
-    W25Qxx_BUSY     = 0X01U
-}W25xx_StatusTypeDef;
+    W25X_OK       = 0x00U,
+    W25X_ERROR    = 0X01U
+}W25X_StatusTypeDef;
 
 /* W25xx 指令 */
 #define W25X_WriteEnable            0x06
@@ -40,6 +40,8 @@ typedef enum{
 #define W25X_Enter4ByteMode         0xB7
 #define W25X_ReadStatusRegister3    0x15
 
+#define WIP_Flag                    0x01
+
 #define W25X_PageSize        256
 #define W25X_WritePageSize   256
 #define W25X_CS_Port SPI1_CS_GPIO_Port
@@ -49,15 +51,18 @@ typedef enum{
 
 
 
-HAL_StatusTypeDef W25xx_GetID(void);
-HAL_StatusTypeDef W25xx_WriteEnable(void);
-W25xx_StatusTypeDef W25xx_WaitUntilBusyReset(void);
-HAL_StatusTypeDef W25xx_SectorErase(uint32_t Sectoraddr);
+uint32_t W25xx_GetID(void);
+static uint8_t W25xx_GetSR(void);
+static void W25xx_WaitWriteBusy(void);
+HAL_StatusTypeDef W25xx_CMD(uint8_t CMD);
+W25X_StatusTypeDef W25xx_WriteEnable(void);
+W25X_StatusTypeDef W25xx_SectorErase(uint32_t Sectoraddr);
 HAL_StatusTypeDef SPI_Transmit(uint8_t * pData, uint16_t Size);
 HAL_StatusTypeDef SPI_Receive(uint8_t * pData, uint16_t Size);
-HAL_StatusTypeDef W25xx_Read(uint32_t ReadAddr, uint8_t * ReadData, uint32_t NumOfData);
+W25X_StatusTypeDef W25xx_Write(uint32_t WriteAddr, uint8_t * WriteData);
+W25X_StatusTypeDef W25xx_Read(uint32_t ReadAddr, uint8_t * ReadData, uint32_t NumOfData);
 HAL_StatusTypeDef SPI_TransmitReceive(uint8_t * pTxData, uint8_t * pRxData, uint16_t Size);
-HAL_StatusTypeDef W25xx_WritePage(uint32_t WriteAddr, uint8_t * WriteData, uint16_t NumOfData);
+W25X_StatusTypeDef W25xx_WritePage(uint32_t WriteAddr, uint8_t * WriteData, uint16_t NumOfData);
 
 
 #endif//__BSP_FLASH_SPI_H__
