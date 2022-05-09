@@ -46,7 +46,7 @@
 
 /* USER CODE BEGIN PV */
 extern uint8_t aRxBuffer;
-uint8_t WriteBuffer[256] = "-------------This is Flash test-----------\r\n------------Hello World!!!------------";
+uint8_t WriteBuffer[256] = {"-------------This is Flash test-----------\r\n------------Hello World!!!------------"};
 uint8_t ReadBuffer[256];
 /* USER CODE END PV */
 
@@ -93,10 +93,23 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
     HAL_UART_Receive_IT(&huart1, &aRxBuffer, 1);
-    if(W25Qxx_GetID() == HAL_OK)
+    if(W25xx_GetID() == HAL_OK)
         printf("Flash test success!\r\n");
     else
         printf("Flash test false!\r\n");
+
+    if(W25xx_SectorErase(0x000000U) == HAL_OK)
+        printf("Flash erase success!\r\n");
+    else
+        printf("Flash erase false!\r\n");
+    if(W25xx_WritePage(0x000000U, WriteBuffer, 10) == HAL_OK)
+        printf("Flash write success!\r\n");
+    else
+        printf("Flash write false!\r\n");
+    if(W25xx_Read(0x000000U, ReadBuffer, 10) == HAL_OK)
+        printf("%s", ReadBuffer);
+    else
+        printf("Flash read false!\r\n");
   /* USER CODE END 2 */
 
   /* Infinite loop */

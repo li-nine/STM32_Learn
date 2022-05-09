@@ -49,7 +49,7 @@ typedef enum
 typedef enum 
 {
   HAL_UNLOCKED = 0x00U,
-  HAL_LOCKED   = 0x01U  
+  HAL_LOCKED   = 0x01U
 } HAL_LockTypeDef;
 
 /* Exported macro ------------------------------------------------------------*/
