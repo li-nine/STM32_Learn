@@ -104,7 +104,7 @@ int main(void)
         printf("Flash erase success!\r\n");
     else
         printf("Flash erase false!\r\n");
-    if(W25xx_Write(4096 * 8 + 250, WriteBuffer) == W25X_OK)
+    if(W25xx_Write(4096 * 8 + 250, WriteBuffer, strlen((const char *)WriteBuffer)) == W25X_OK)
         printf("Flash write success!\r\n");
     else
         printf("Flash write false!\r\n");

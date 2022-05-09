@@ -59,9 +59,9 @@ W25X_StatusTypeDef W25xx_WriteEnable(void);
 W25X_StatusTypeDef W25xx_SectorErase(uint32_t Sectoraddr);
 HAL_StatusTypeDef SPI_Transmit(uint8_t * pData, uint16_t Size);
 HAL_StatusTypeDef SPI_Receive(uint8_t * pData, uint16_t Size);
-W25X_StatusTypeDef W25xx_Write(uint32_t WriteAddr, uint8_t * WriteData);
 W25X_StatusTypeDef W25xx_Read(uint32_t ReadAddr, uint8_t * ReadData, uint32_t NumOfData);
 HAL_StatusTypeDef SPI_TransmitReceive(uint8_t * pTxData, uint8_t * pRxData, uint16_t Size);
+W25X_StatusTypeDef W25xx_Write(uint32_t WriteAddr, uint8_t * WriteData, uint32_t NumOfData);
 W25X_StatusTypeDef W25xx_WritePage(uint32_t WriteAddr, uint8_t * WriteData, uint16_t NumOfData);
 
 

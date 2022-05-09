@@ -19,13 +19,10 @@ extern SPI_HandleTypeDef hspi1;
   * @param      WriteData : 指向写入数据的地址
   * @retval     状态
   */
-W25X_StatusTypeDef W25xx_Write(uint32_t WriteAddr, uint8_t * WriteData)
+W25X_StatusTypeDef W25xx_Write(uint32_t WriteAddr, uint8_t * WriteData, uint32_t NumOfData)
 {
     uint16_t i, NumOfPage, CountOfSingle, NumOfAddr, CountOfAddr;
-    uint32_t NumOfData;
 
-    //发送的数据长度
-    NumOfData = strlen((const char *)WriteData);
     //发送的数据的页数
     NumOfPage = NumOfData / W25X_WritePageSize;
     //剩下单页的数据长度
@@ -317,10 +314,9 @@ HAL_StatusTypeDef SPI_TransmitReceive(uint8_t * pTxData, uint8_t * pRxData, uint
 }
 
 /**
-  * @brief      函数作用
-  * @note       备注
-  * @param      参数
-  * @retval     返回值
+  * @brief      发送指令
+  * @param      CMD : W25xx指令
+  * @retval     状态
   */
 HAL_StatusTypeDef W25xx_CMD(uint8_t CMD)
 {
