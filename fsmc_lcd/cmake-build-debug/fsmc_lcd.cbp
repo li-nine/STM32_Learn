@@ -104,6 +104,9 @@
 		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/fsmc_lcd/Bsp/LCD/bsp_lcd.h">
 			<Option target="fsmc_lcd.elf"/>
 		</Unit>
+		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/fsmc_lcd/Bsp/LCD/font.h">
+			<Option target="fsmc_lcd.elf"/>
+		</Unit>
 		<Unit filename="F:/ProgramData/EmbeddedProject/STM32/Xuexi/fsmc_lcd/Bsp/LCD/nt35310.c">
 			<Option target="fsmc_lcd.elf"/>
 		</Unit>

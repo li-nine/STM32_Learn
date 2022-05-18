@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "bsp_lcd.h"
+#include "bsp_usart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -89,7 +90,12 @@ int main(void)
   MX_FSMC_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+    LCD_Init();
+    LCD_Fill(10, 10, 200, 200, BLUE);
+    LCD_DrawLine(10, 300, 20,250);
+    LCD_DrawRectangle(10, 300, 250, 350);
+    LCD_Draw_Circle(50, 370, 30);
+    LCD_ShowString(50, 100, 24, "hello world!");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -99,6 +105,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+      HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+      HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }

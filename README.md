@@ -20,5 +20,5 @@
 
 - [SPI读写Flash](https://github.com/li-nine/STM32_Learn/tree/main/flash_spi)
 
-	
+- [FSMC驱动LCD显示](https://github.com/li-nine/STM32_Learn/tree/main/fsmc_lcd)
 
